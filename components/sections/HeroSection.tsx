@@ -6,13 +6,14 @@ export default function HeroSection() {
   return (
     <section className="bg-gradient-to-br from-blue-50 to-indigo-100 py-16 lg:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-          ちいさなサイバー防衛室、
-          <br />
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight text-balance">
+          ちいさなサイバー防衛室 <br className="hidden lg:block" />
           <span className="text-blue-600">tiny-csirt</span> へようこそ！
         </h1>
         <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-          家庭でも、会社でも。ちょっとした気づきで、ぐっと安心に。
+          家庭でも会社でも。
+          <br />
+          ちょっとした気づきで、ぐっと安心に。
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button
