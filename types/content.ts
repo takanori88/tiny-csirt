@@ -36,9 +36,19 @@ export type AboutSectionProps = {
   description: React.ReactNode;
 };
 
+export type FooterContentProps = {
+  description: string;
+  sections: {
+    title: string;
+    links: { label: string; href: string }[];
+  }[];
+  copyright: string;
+};
+
 export type HomepageContent = {
   header: HeaderContentProps;
   audience: AudienceContentProps;
   hero: HeroSectionProps;
   about: AboutSectionProps;
+  footer: FooterContentProps;
 };

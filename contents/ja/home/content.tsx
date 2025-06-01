@@ -2,7 +2,7 @@ import type { HomepageContent } from "@/types/content";
 
 const content: HomepageContent = {
   header: {
-    navItems: ["ホーム", "家庭向け", "企業向け", "お問い合わせ"],
+    navItems: ["ホーム", "家庭向け", "企業向け", "サポート"],
     languageSwitcher: {
       ja: "日本語",
       en: "English",
@@ -62,6 +62,23 @@ const content: HomepageContent = {
         小さな実験室です。
       </>
     ),
+  },
+  footer: {
+    description: "家庭と中小企業のための\nサイバーセキュリティ情報",
+    sections: [
+      {
+        title: "コンテンツ",
+        links: [
+          { label: "家庭向け対策", href: "#" },
+          { label: "企業向け対策", href: "#" },
+        ],
+      },
+      {
+        title: "サポート",
+        links: [{ label: "プライバシーポリシー", href: "#" }],
+      },
+    ],
+    copyright: "© 2025 tiny-csirt. All rights reserved.",
   },
 };
 

@@ -2,7 +2,7 @@ import type { HomepageContent } from "@/types/content";
 
 const content: HomepageContent = {
   header: {
-    navItems: ["Home", "For Families", "For Businesses", "Contact"],
+    navItems: ["Home", "For Families", "For Businesses", "Support"],
     languageSwitcher: {
       ja: "Japanese",
       en: "English",
@@ -67,6 +67,23 @@ const content: HomepageContent = {
         think about cybersecurity as their own concern.
       </>
     ),
+  },
+  footer: {
+    description: "Cybersecurity tips for homes and small businesses.",
+    sections: [
+      {
+        title: "Content",
+        links: [
+          { label: "For Families", href: "#" },
+          { label: "For Businesses", href: "#" },
+        ],
+      },
+      {
+        title: "Support",
+        links: [{ label: "Privacy Policy", href: "#" }],
+      },
+    ],
+    copyright: "© 2025 tiny-csirt. All rights reserved.",
   },
 };
 

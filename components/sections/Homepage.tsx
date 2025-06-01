@@ -29,7 +29,7 @@ export default function Homepage({ content }: HomepageProps) {
         title={content.about.title}
         description={content.about.description}
       />
-      <Footer />
+      <Footer content={content.footer} />
     </div>
   );
 }
