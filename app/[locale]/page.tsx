@@ -1,5 +1,5 @@
-import jaContent from "@/components/ja/content";
-import enContent from "@/components/en/content";
+import jaContent from "@/contents/ja/home/content";
+import enContent from "@/contents/en/home/content";
 import Homepage from "@/components/sections/homepage";
 
 type Locale = "ja" | "en";

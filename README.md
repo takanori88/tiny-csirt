@@ -1,30 +1,64 @@
-# Tiny csirt website
+# tiny-csirt
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
+![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)
+![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/takanori88s-projects/v0-tiny-csirt-website)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/sXt9Iw199SM)
+## 🛡️ What is tiny-csirt?
 
-## Overview
+**tiny-csirt** is a small but mighty cybersecurity ZINE for homes and small businesses.  
+No buzzwords. No fear-mongering. Just practical, hands-on security knowledge — served with a touch of humor.
 
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
+Visit the site: 👉 **[https://tiny-csirt.com](https://tiny-csirt.com)**
 
-## Deployment
+## 🔧 How it's built
 
-Your project is live at:
+This site is built and maintained using [v0.dev](https://v0.dev), an AI-powered UI builder.  
+Changes made via v0 are automatically synced to this repository, which is deployed via [Vercel](https://vercel.com).
 
-**[https://vercel.com/takanori88s-projects/v0-tiny-csirt-website](https://vercel.com/takanori88s-projects/v0-tiny-csirt-website)**
+- 🛠 Frontend: Next.js (App Router) + TailwindCSS
+- 🌍 Hosting: Vercel
+- ✍️ Design: Built with v0.dev
 
-## Build your app
+## 🚀 Deployment
 
-Continue building your app on:
+The live project is available at:
 
-**[https://v0.dev/chat/projects/sXt9Iw199SM](https://v0.dev/chat/projects/sXt9Iw199SM)**
+**🔗 [https://tiny-csirt.com](https://tiny-csirt.com)**
 
-## How It Works
 
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+## 🧠 Philosophy
+
+Security doesn't have to be overwhelming.  
+**tiny-csirt** believes cybersecurity should be understandable, teachable, and even a little bit fun.  
+
+> “押すなよ！絶対押すなよ！”  
+> – Every security warning ever
+
+## 🤖 Credits
+
+Designed with the help of [v0.dev](https://v0.dev).  
+Developed with lots of trial and error — and a little help from AI.
+
+Special thanks to:  
+- 💬 **ChatGPT** – for brainstorming ideas, fixing code, and occasionally asking “それ本当にやりたい？”  
+- 🧠 **You** – for visiting this repo and caring about cybersecurity
+
+---
+
+Looking for the Japanese version? 🇯🇵  
+👉 [README.ja.md](./README.ja.md)
+
+---
+
+## 📄 License
+
+- 🧑‍💻 Source code: [MIT License](./LICENSE)
+- ✍️ Content (ZINE): [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)
+
+Please reach out if you want to reuse any part commercially.
+
+---
+
+© 2025 tiny-csirt  
+Handcrafted with curiosity, coffee, and care.  
+Security is human. Humor helps.
