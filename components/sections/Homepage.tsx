@@ -22,7 +22,10 @@ export default function Homepage({ content }: HomepageProps) {
       />
       <AudienceCards />
       <LatestContent />
-      <AboutSection />
+      <AboutSection
+        title={content.about.title}
+        description={content.about.description}
+      />
       <Footer />
     </div>
   );

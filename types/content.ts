@@ -1,3 +1,5 @@
+import React from "react";
+
 // types/content.ts
 export type HeroSectionProps = {
   title: React.ReactNode;
@@ -6,7 +8,13 @@ export type HeroSectionProps = {
   buttonBusiness: string;
 };
 
+export type AboutSectionProps = {
+  title: string;
+  description: React.ReactNode;
+};
+
 export type HomepageContent = {
   hero: HeroSectionProps;
+  about: AboutSectionProps;
   // audienceData, latestContent なども順次追加可能
 };

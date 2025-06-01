@@ -20,6 +20,20 @@ const content: HomepageContent = {
     buttonFamily: "See tips for families",
     buttonBusiness: "See tips for small businesses",
   },
+  about: {
+    title: "What is tiny-csirt?",
+    description: (
+      <>
+        For those who want to take security into their own hands.{" "}
+        <br className="hidden md:block" />
+        tiny-csirt is a small experimental lab
+        <br className="hidden md:block" />
+        that helps households and small businesses
+        <br className="hidden md:block" />
+        think about cybersecurity as their own concern.
+      </>
+    ),
+  },
 };
 
 export default content;
