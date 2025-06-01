@@ -52,13 +52,20 @@ Looking for the Japanese version? 🇯🇵
 
 ## 📄 License
 
-- 🧑‍💻 Source code: [MIT License](./LICENSE)
-- ✍️ Content (ZINE): [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)
+This repository contains both open source code and Creative Commons content:
 
-Please reach out if you want to reuse any part commercially.
+- 🧑‍💻 Source code (under `/app`, `/components`, etc.):  
+  Licensed under the [MIT License](./LICENSE)
+
+- ✍️ Content (under `/contents`, `/public`):  
+  Licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)
+
+See the [LICENSE](./LICENSE) file for full details.
+
+Please contact us if you wish to reuse content commercially.
 
 ---
 
 © 2025 tiny-csirt  
-Handcrafted with curiosity, coffee, and care.  
-Security is human. Humor helps.
+This project began with curiosity, coffee, and a casual conversation with AI.  
+Security is part of being human — and a little humor goes a long way.
