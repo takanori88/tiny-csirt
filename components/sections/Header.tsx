@@ -6,10 +6,11 @@ import { Shield, Menu } from "lucide-react";
 import Link from "next/link";
 import type { HeaderContentProps } from "@/types/content";
 
-export default function Header({
-  navItems,
-  languageSwitcher,
-}: HeaderContentProps) {
+type Props = {
+  content: HeaderContentProps;
+};
+
+export default function Header({ content }: Props) {
   const [isOpen, setIsOpen] = useState(false);
   const router = useRouter();
   const pathname = usePathname();
@@ -38,7 +39,7 @@ export default function Header({
 
           {/* PC用ナビ */}
           <div className="hidden md:flex items-center space-x-8">
-            {navItems.map((item) => (
+            {content.navItems.map((item) => (
               <a
                 key={item}
                 href="#"
@@ -58,7 +59,7 @@ export default function Header({
                     : "text-gray-500"
                 }`}
               >
-                {languageSwitcher.ja}
+                {content.languageSwitcher.ja}
               </button>
               <button
                 onClick={() => changeLocale("en")}
@@ -68,7 +69,7 @@ export default function Header({
                     : "text-gray-500"
                 }`}
               >
-                {languageSwitcher.en}
+                {content.languageSwitcher.en}
               </button>
             </div>
           </div>
@@ -99,7 +100,7 @@ export default function Header({
                 tiny-csirt
               </span>
             </div>
-            {navItems.map((item) => (
+            {content.navItems.map((item) => (
               <a
                 key={item}
                 href="#"
@@ -120,7 +121,7 @@ export default function Header({
                     : "text-gray-500"
                 }`}
               >
-                {languageSwitcher.ja}
+                {content.languageSwitcher.ja}
               </button>
               <button
                 onClick={() => changeLocale("en")}
@@ -130,7 +131,7 @@ export default function Header({
                     : "text-gray-500"
                 }`}
               >
-                {languageSwitcher.en}
+                {content.languageSwitcher.en}
               </button>
             </div>
           </div>

@@ -13,22 +13,11 @@ type HomepageProps = {
 export default function Homepage({ content }: HomepageProps) {
   return (
     <div className="min-h-screen bg-gray-50">
-      <Header
-        navItems={content.header.navItems}
-        languageSwitcher={content.header.languageSwitcher}
-      />
-      <HeroSection
-        title={content.hero.title}
-        subtitle={content.hero.subtitle}
-        buttonFamily={content.hero.buttonFamily}
-        buttonBusiness={content.hero.buttonBusiness}
-      />
+      <Header content={content.header} />
+      <HeroSection content={content.hero} />
       <AudienceCards content={content.audience} />
       {/* <LatestContent /> */}
-      <AboutSection
-        title={content.about.title}
-        description={content.about.description}
-      />
+      <AboutSection content={content.about} />
       <Footer content={content.footer} />
     </div>
   );
