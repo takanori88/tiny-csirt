@@ -1,7 +1,7 @@
 import type { HomepageContent } from "@/types/content";
 
 const content: HomepageContent = {
-  haeder: {
+  header: {
     navItems: ["Home", "For Families", "For Businesses", "Contact"],
     languageSwitcher: {
       ja: "Japanese",
@@ -27,6 +27,33 @@ const content: HomepageContent = {
     buttonFamily: "See tips for families",
     buttonBusiness: "See tips for small businesses",
   },
+  audience: [
+    {
+      emoji: "🏠",
+      title: "For Families",
+      description: "Start better online habits to protect your family.",
+      commingSoon: true,
+      items: [
+        { icon: "Users", text: "Learn cybersecurity with your kids" },
+        { icon: "Lock", text: "All about passwords and digital keys" },
+        { icon: "Shield", text: "How to spot phishing emails and texts" },
+      ],
+    },
+    {
+      emoji: "💼",
+      title: "For Businesses",
+      description: "Take the first step in cybersecurity—starting today.",
+      commingSoon: true,
+      items: [
+        { icon: "BookOpen", text: "What is EDR?" },
+        { icon: "Shield", text: "Common pitfalls in user acceptance testing" },
+        {
+          icon: "Building2",
+          text: "How to audit your company’s information assets",
+        },
+      ],
+    },
+  ],
   about: {
     title: "What is tiny-csirt?",
     description: (

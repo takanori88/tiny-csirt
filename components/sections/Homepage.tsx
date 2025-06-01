@@ -14,8 +14,8 @@ export default function Homepage({ content }: HomepageProps) {
   return (
     <div className="min-h-screen bg-gray-50">
       <Header
-        navItems={content.haeder.navItems}
-        languageSwitcher={content.haeder.languageSwitcher}
+        navItems={content.header.navItems}
+        languageSwitcher={content.header.languageSwitcher}
       />
       <HeroSection
         title={content.hero.title}
@@ -23,8 +23,8 @@ export default function Homepage({ content }: HomepageProps) {
         buttonFamily={content.hero.buttonFamily}
         buttonBusiness={content.hero.buttonBusiness}
       />
-      <AudienceCards />
-      <LatestContent />
+      <AudienceCards content={content.audience} />
+      {/* <LatestContent /> */}
       <AboutSection
         title={content.about.title}
         description={content.about.description}

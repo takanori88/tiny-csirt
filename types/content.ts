@@ -16,14 +16,29 @@ export type HeroSectionProps = {
   buttonBusiness: string;
 };
 
+export type AudienceItem = {
+  icon: "Users" | "Lock" | "Shield" | "BookOpen" | "Building2";
+  text: string;
+};
+
+export type AudienceCard = {
+  emoji: string;
+  title: string;
+  description: string;
+  items: AudienceItem[];
+  commingSoon?: boolean; // オプションで「coming soon」を表示するかどうか
+};
+
+export type AudienceContentProps = AudienceCard[];
+
 export type AboutSectionProps = {
   title: string;
   description: React.ReactNode;
 };
 
 export type HomepageContent = {
-  haeder: HeaderContentProps;
+  header: HeaderContentProps;
+  audience: AudienceContentProps;
   hero: HeroSectionProps;
   about: AboutSectionProps;
-  // audienceData, latestContent なども順次追加可能
 };

@@ -1,7 +1,7 @@
 import type { HomepageContent } from "@/types/content";
 
 const content: HomepageContent = {
-  haeder: {
+  header: {
     navItems: ["ホーム", "家庭向け", "企業向け", "お問い合わせ"],
     languageSwitcher: {
       ja: "日本語",
@@ -25,6 +25,30 @@ const content: HomepageContent = {
     buttonFamily: "家庭向けの対策を見る",
     buttonBusiness: "中小企業向けの対策を見る",
   },
+  audience: [
+    {
+      emoji: "🏠",
+      title: "家庭向け",
+      description: "家族を守るネットの習慣、始めませんか？",
+      commingSoon: true,
+      items: [
+        { icon: "Users", text: "子どもと学ぶセキュリティ" },
+        { icon: "Lock", text: "パスワードと鍵の話" },
+        { icon: "Shield", text: "詐欺メール・SMSの見分け方" },
+      ],
+    },
+    {
+      emoji: "💼",
+      title: "中小企業向け",
+      description: "今日からできる、セキュリティの第一歩。",
+      commingSoon: true,
+      items: [
+        { icon: "BookOpen", text: "EDRってなに？" },
+        { icon: "Shield", text: "受け入れテストの落とし穴" },
+        { icon: "Building2", text: "社内での「情報の棚卸し」実践法" },
+      ],
+    },
+  ],
   about: {
     title: "tiny-csirtってなに？",
     description: (
