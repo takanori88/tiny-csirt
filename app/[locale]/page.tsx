@@ -1,6 +1,6 @@
 import jaContent from "@/contents/ja/home/content";
 import enContent from "@/contents/en/home/content";
-import Homepage from "@/components/sections/homepage";
+import Homepage from "@/components/sections/Homepage";
 
 type Locale = "ja" | "en";
 
