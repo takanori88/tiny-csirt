@@ -13,7 +13,10 @@ type HomepageProps = {
 export default function Homepage({ content }: HomepageProps) {
   return (
     <div className="min-h-screen bg-gray-50">
-      <Header />
+      <Header
+        navItems={content.haeder.navItems}
+        languageSwitcher={content.haeder.languageSwitcher}
+      />
       <HeroSection
         title={content.hero.title}
         subtitle={content.hero.subtitle}

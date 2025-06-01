@@ -1,6 +1,13 @@
 import type { HomepageContent } from "@/types/content";
 
 const content: HomepageContent = {
+  haeder: {
+    navItems: ["ホーム", "家庭向け", "企業向け", "お問い合わせ"],
+    languageSwitcher: {
+      ja: "日本語",
+      en: "English",
+    },
+  },
   hero: {
     title: (
       <>

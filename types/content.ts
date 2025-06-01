@@ -1,6 +1,14 @@
+// types/content.ts
 import React from "react";
 
-// types/content.ts
+export type HeaderContentProps = {
+  navItems: string[];
+  languageSwitcher: {
+    ja: string;
+    en: string;
+  };
+};
+
 export type HeroSectionProps = {
   title: React.ReactNode;
   subtitle: React.ReactNode;
@@ -14,6 +22,7 @@ export type AboutSectionProps = {
 };
 
 export type HomepageContent = {
+  haeder: HeaderContentProps;
   hero: HeroSectionProps;
   about: AboutSectionProps;
   // audienceData, latestContent なども順次追加可能

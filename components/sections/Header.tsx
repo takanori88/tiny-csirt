@@ -4,14 +4,15 @@ import { useState } from "react";
 import { useRouter, usePathname } from "next/navigation";
 import { Shield, Menu } from "lucide-react";
 import Link from "next/link";
+import type { HeaderContentProps } from "@/types/content";
 
-export default function Header() {
+export default function Header({
+  navItems,
+  languageSwitcher,
+}: HeaderContentProps) {
   const [isOpen, setIsOpen] = useState(false);
   const router = useRouter();
   const pathname = usePathname();
-
-  // ナビゲーションアイテム
-  const navItems = ["ホーム", "家庭向け", "企業向け", "お問い合わせ"];
 
   // Localeをパスから判定
   const currentLocale = pathname.startsWith("/ja") ? "ja" : "en";
@@ -57,7 +58,7 @@ export default function Header() {
                     : "text-gray-500"
                 }`}
               >
-                日本語
+                {languageSwitcher.ja}
               </button>
               <button
                 onClick={() => changeLocale("en")}
@@ -67,7 +68,7 @@ export default function Header() {
                     : "text-gray-500"
                 }`}
               >
-                English
+                {languageSwitcher.en}
               </button>
             </div>
           </div>
@@ -119,7 +120,7 @@ export default function Header() {
                     : "text-gray-500"
                 }`}
               >
-                日本語
+                {languageSwitcher.ja}
               </button>
               <button
                 onClick={() => changeLocale("en")}
@@ -129,7 +130,7 @@ export default function Header() {
                     : "text-gray-500"
                 }`}
               >
-                English
+                {languageSwitcher.en}
               </button>
             </div>
           </div>
