@@ -1,9 +1,11 @@
-import JaHomepage from "@/components/ja/homepage";
-import EnHomepage from "@/components/en/homepage";
+import jaContent from "@/components/ja/content";
+import enContent from "@/components/en/content";
+import Homepage from "@/components/sections/homepage";
 
 type Locale = "ja" | "en";
 
 export default async function Page({ params }: { params: { locale: Locale } }) {
   const { locale } = await params;
-  return locale === "ja" ? <JaHomepage /> : <EnHomepage />;
+  const content = locale === "ja" ? jaContent : enContent;
+  return <Homepage content={content} />;
 }
